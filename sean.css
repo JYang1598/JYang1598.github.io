@@ -1,0 +1,18 @@
+p{
+    color:blue;
+
+}
+.firstP{
+    font-style: italic;
+    color:black;
+    font-weight:bold
+}
+/*can specify what type of class by p.firstP or div.firstP*/
+
+
+/*give something specific some character with an ID attribute*/
+#IDName{
+    text-align: center;
+    color:black;
+    background-color:aliceblue;
+}
