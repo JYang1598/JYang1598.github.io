@@ -1,3 +1,28 @@
 p {
     color:purple;
 }
+.forestp {
+    font-family: Lucida Console, Courier, monospace;
+    font-weight:bold;
+    color:crimson;
+}
+
+.subaplinep {
+    font-family: fangsong;
+    font-weight:bold;
+    color:darkcyan;
+}
+
+#alphineZone {
+    font-family: cursive;
+    font-size: large;
+    color:darkmagenta;
+}
+
+.hovertoShow:hover #appear {
+    display: block;
+}
+
+#appear {
+    display:none;
+}
