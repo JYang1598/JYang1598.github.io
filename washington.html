@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="zitong.css">
   <link rel="stylesheet" href="patrick.css">
 
+  <!--Mark Comment: in the above three files, all of them have a p selector with a color specified. Only patrick's will work (purple) since whichever was read by the web browser last will overwrite previous specifications using the same selector/property.-->
+
   <style>
     p {
       font-family: 'Courier New', Courier, monospace;
     }
   </style>
+  <!--Mark Comment: why didn't you combine these two style blocks?-->
   <style type="text/css">
     h1 {
       text-align: center;
@@ -60,6 +63,7 @@
 </head>
 
 <body>
+  <!--Mark Comment: There's nothing in this h1 tag. If you just want a blank line, don't use a tag that says, "here's a heading" to the web browser.-->
   <h1 style="text-align:center">
   </h1>
   <h1>
@@ -164,8 +168,11 @@
 
 
     <h2 style="background-color:rgb(196, 100, 45);">Plant Life</h2>
+      <!--Mark Comment: now that you know some CSS, try to specify borders and width and other formatting attributes using styles instead of HTML attributes. Also, for tables and images, it is generally a good idea to start specifying relative sizes instead of absolute sizes. So, for example if you want this table to take up the whole width set it to 100%. That way if someone resizes their browser windor or uses a phone to browse your site, the table intelligently displays full width.-->
+
     <table border="1" width="500">
       <!--Mark's Comment: the colspan attribute tells the browser that this one column spans across a number of cells, in this case 500, which means your table is 500 columns wide. I'm guessing that wasn't intentional. In your other rows, you have 2 columns so this colspan value should be 2-->
+      <!--Mark Comment: it doesn't look like you've fixed the below colspan error.-->
       <th colspan="500">
         Plant Community Zones that can be found:
       </th>
