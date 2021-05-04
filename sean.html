@@ -9,12 +9,10 @@
   <link rel="stylesheet" href="sean.css">
 
   <!--embedded stylesheet******************************************************-->
-  <style >
-    /*Specific Tag styles****************************************************/
+  <style type="text/css">
     p {
       font-family: Arial, Helvetica, sans-serif;
       color: rgb(6, 22, 247);
-      /*position and alignment of elements*****************************************************/
       margin-left: 50px;
     } 
 
@@ -22,17 +20,25 @@
       font-family: Arial, Helvetica, sans-serif;
       color: black;
     }
-  </style>
 
-  <!--Mark Comment: any reason why you didn't combine these two style blocks?-->
-  <style type="text/css">
     a{
       font-weight: bold
     }
     a:hover {
       color: rgb(10, 134, 6);
     }
-  </style>
+    table{
+      width: 100%;
+      border-style: groove;
+    }
+    th{
+      border-style: double;
+    }
+    td{
+      border-style: double;
+    }
+  
+  </style> 
   
 
   
@@ -45,12 +51,6 @@
       <!--#ID Attribute******************************************************-->
       <em id="IDName">Washington Landmarks</em>
     </h1>
-    
-    <!--Mark's Comment: Usually, you want to encapsulate text within paragraph or div or h or other 
-      elements that indicate type of content. span is a special case in that it doesn't really say, 
-      hey this is a different sort of text section than other sections of the page. Instead span is used 
-      to mark of specific phrases within a larger text section. All this is to say, you should nest 
-      this span tag within a div or p element.-->
 
     <div class="firstP">Exploring the Pacific Northwest!</div>
 
@@ -133,10 +133,7 @@
 
 
   <h2 style="background-color:rgb(196, 100, 45);">Plant Life</h2>
-  <!--Mark Comment: now that you know some CSS, try to specify borders and width and other formatting attributes using styles instead of HTML attributes. Also, for tables and images, it is generally a good idea to start specifying relative sizes instead of absolute sizes. So, for example if you want this table to take up the whole width set it to 100%. That way if someone resizes their browser windor or uses a phone to browse your site, the table intelligently displays full width.-->
-  <table border="1" width="500">
-    <!--Mark's Comment: the colspan attribute tells the browser that this one column spans across a number of cells, in this case 500, which means your table is 500 columns wide. I'm guessing that wasn't intentional. In your other rows, you have 2 columns so this colspan value should be 2-->
-      <!--Mark Comment: it doesn't look like you've fixed the below colspan error.-->
+  <table>
     <th colspan="2">
       Plant Community Zones that can be found:
     </th>
