@@ -10,17 +10,16 @@
 
   <!--Mark Comment: in the above three files, all of them have a p selector with a color specified. Only patrick's will work (purple) since whichever was read by the web browser last will overwrite previous specifications using the same selector/property.-->
 
-  <style>
-    p {
-      font-family: 'Courier New', Courier, monospace;
-    }
-  </style>
-  <!--Mark Comment: why didn't you combine these two style blocks?-->
+  <!--Mark Comment: why didn't you combine these two style blocks?--> 
+  <!--Reply:fixed-->
   <style type="text/css">
     h1 {
       text-align: center;
     }
-
+    p {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    
     body {
       background: rgb(255, 255, 255);
       background-image: url("evergreen-tre.jpg");
@@ -63,9 +62,8 @@
 </head>
 
 <body>
-  <!--Mark Comment: There's nothing in this h1 tag. If you just want a blank line, don't use a tag that says, "here's a heading" to the web browser.-->
-  <h1 style="text-align:center">
-  </h1>
+  <!--Mark Comment: There's nothing in this h1 tag. If you just want a blank line, don't use a tag that says, "here's a heading" to the web browser.--> 
+   <!--Reply:fixed-->
   <h1>
     <em>Washington Landmarks</em>
   </h1>
@@ -168,12 +166,14 @@
 
 
     <h2 style="background-color:rgb(196, 100, 45);">Plant Life</h2>
-      <!--Mark Comment: now that you know some CSS, try to specify borders and width and other formatting attributes using styles instead of HTML attributes. Also, for tables and images, it is generally a good idea to start specifying relative sizes instead of absolute sizes. So, for example if you want this table to take up the whole width set it to 100%. That way if someone resizes their browser windor or uses a phone to browse your site, the table intelligently displays full width.-->
+      <!--Mark Comment: now that you know some CSS, try to specify borders and width and other formatting attributes using styles instead of HTML attributes. Also, for tables and images, it is generally a good idea to start specifying relative sizes instead of absolute sizes. So, for example if you want this table to take up the whole width set it to 100%. That way if someone resizes their browser windor or uses a phone to browse your site, the table intelligently displays full width.--> 
+       <!--fixed the table with-->
 
-    <table border="1" width="500">
+    <table border="1" width="100%">
       <!--Mark's Comment: the colspan attribute tells the browser that this one column spans across a number of cells, in this case 500, which means your table is 500 columns wide. I'm guessing that wasn't intentional. In your other rows, you have 2 columns so this colspan value should be 2-->
-      <!--Mark Comment: it doesn't look like you've fixed the below colspan error.-->
-      <th colspan="500">
+      <!--Mark Comment: it doesn't look like you've fixed the below colspan error.--> 
+       <!--fixed the width + colspan-->
+      <th colspan="2">
         Plant Community Zones that can be found:
       </th>
       <!--Patrick.css section-->
