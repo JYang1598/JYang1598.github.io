@@ -5,7 +5,9 @@ p{
 .firstP{
     font-style: italic;
     color:black;
-    font-weight:bold
+    font-weight:bold;
+    border-style:dashed;
+    border-width: 100%;
 }
 /*can specify what type of class by p.firstP or div.firstP*/
 
