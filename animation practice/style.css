@@ -1,0 +1,32 @@
+body{
+background-color: rgb(1, 196, 255); 
+}
+#path{
+    border-bottom: 7px dashed rgb(255, 255, 255)
+}
+#kirby{
+background:url("images/kirby.png");
+width:65.75px;
+height:58px;
+animation: walk 1s steps(8) infinite, 
+            forward 10s linear infinite;
+}
+@keyframes walk{
+   0%{
+       background-position: 0px;
+   } 
+   100%{ 
+       background-position: 526px;
+   }
+}
+   @keyframes forward{
+       0%{
+           trasnform:translateX(-100px);
+       }
+   100%{
+       transform:translateX(1200px);
+   }
+}
+#path2{
+    border-bottom: 7px dashed rgb(255, 255, 255)
+}
