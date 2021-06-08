@@ -35,7 +35,7 @@ body{
 /*Animation*/
 
 @keyframes moveRight{
-    100%(transform:translateX(-2590px);
+    100% (transform:translateX(-2950px);
 }
 @keyframes suspension{
     100%{

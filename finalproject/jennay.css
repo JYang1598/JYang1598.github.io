@@ -12,8 +12,8 @@
     padding: 5px;
 
 }
-.row: :after{
-    content:"",
+.row::after{
+    content:"";
     display: table;
 
 }
@@ -23,3 +23,35 @@ p{
     line-height:2em;
     margin-bottom:40px;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .glow {
+    font-size: 30px;
+    color: rgb(17, 12, 12);
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px rgb(62, 15, 116), 0 0 30px #6c12b6;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #eccf26, 0 0 40px #e9ce33, 0 0 50px;
+    }
+  }
