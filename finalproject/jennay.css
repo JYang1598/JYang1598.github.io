@@ -39,12 +39,20 @@ p{
     clear: both;
     display: table;
   }
+
   .glow {
     font-size: 30px;
     color: rgb(17, 12, 12);
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
   }
+  
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(106, 44, 163), 0 0 20px rgb(148, 91, 221); }  
+  to {
+    text-shadow: 0 0 20px rgb(248, 192, 87), 0 0 30px #ffdb79; }
+}
 
 
   #score { text-align: center; }
@@ -93,5 +101,3 @@ p{
     75%{top: 75px;}
     100%{top: 225px;}
   }
-
-

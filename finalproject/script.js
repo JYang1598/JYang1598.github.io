@@ -1,4 +1,3 @@
-  
 const husky = document.getElementById("husky");
 const paper = document.getElementById("paper");
 const score = document.getElementById("score");
@@ -29,8 +28,10 @@ setInterval(() => {
   }
 
   if (paperLeft < 50 && paperLeft > 0 && huskyTop > 150) {
-    alert("You got a score of: " + score.innerText +
+       
+   alert("You got a score of: " + score.innerText +
       "\n\nPlay again?");
     location.reload();
   }
 }, 50);
+
